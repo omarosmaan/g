@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+   /* box-sizing: border-box; */
+}
+body{
+    background:linear-gradient(1200deg, #3ec0b4, #d748f9) ;
+    min-height: 100vh;
+    font-family: "poppins";
+    font-size: 16px;
+}
+header{
+    font-size: 2.5rem;
+    font-weight:bold;
+    color: azure;
+}
+header,
+form{
+    display: flex;
+    justify-content: center;/*تضعها في المنتصف على محور الإكسات */
+    align-items: center;/*تضعها في المنتصف على محور الوايات */
+    min-height: 15vh;
+}
+form input,
+form button{
+    border: none;
+    padding: 0.4rem;
+    background-color: #fff;
+    font-size: 1.5rem;
+}
+form button{
+    color: #d748f9;
+    cursor: pointer;/* لكي يتغير المؤشر من السهم إلى اليد */
+    transition: all 0.3s ease;
+}
+form button:hover{
+    background-color: #d748f9;
+    color: #fff;
+}
+.todo-contaner{
+    display: flex;
+    justify-content: center;
+}
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+    margin: 0.5rem;
+   
+    
+}
+
+.todo{
+    
+    display: flex;
+    align-items:center;
+    background: #fff;
+    font-size: 1rem;
+    transition:all 0.8s ease;
+    margin: 0.5rem;
+    
+
+}
+
+ .todo-item{
+     
+     padding: 0 0.5rem ;
+     flex:  1 ;
+
+ }
+.complete-btn, 
+.trash-btn{
+    background-color: #940d57;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    border: none;
+    
+  }
+  
+  .complete-btn {
+    background-color: #3ec0b4;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+.fa-trash,
+.fa-check{
+    pointer-events: none;
+}
